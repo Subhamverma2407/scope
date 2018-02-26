@@ -50,6 +50,25 @@ This script downloads and runs a recent Scope image from Docker Hub.
 Now, open your web browser to **http://localhost:4040**. (If you're using
 boot2docker, replace localhost with the output of `boot2docker ip`.)
 
+### For Running UI From Cloned Repository
+
+- Clone the repository on your local machine by `sudo git clone https://github.com/openebs/scope.git` command.
+- Install docker on your local machine. If not installed then go through this link [https://docs.docker.com/install/linux/docker-ce/ubuntu/].
+- Run these commands
+```
+sudo curl -L git.io/scope -o /usr/local/bin/scope
+sudo chmod a+x /usr/local/bin/scope
+scope launch
+```
+Check if Curl is installed on your local machine or not.
+If not then run this command
+```
+sudo apt-get update
+sudo apt-get install curl
+```
+Now you can go through the UI of scope from your web browswer at **http://localhost:4040**.
+
+
 ### For Hosted UI 
 
 - `cd client`
